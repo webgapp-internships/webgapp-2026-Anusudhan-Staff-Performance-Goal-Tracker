@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    nav{
+        background-color:black;
+        color: white;
+        display: flex;
+
+    }
+    ul{
+        display: flex;
+        gap: 20px;
+    }
+    li{
+        list-style: none;
+        gap: 20px;
+    }
+    .box{
+        display: flex;
+        gap: 30px;
+        margin-top: 20px;
+    }
+    .box1{
+       background-color: chartreuse;
+       width: 300px;
+       border: 2px solid black;
+       border-radius: 20px;
+       padding: 20px;
+    }
+    .box2{
+        background-color: chocolate;
+        border: 2px solid black;
+        border-radius: 4px;
+        width: 300px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .box3{
+        background-color: aqua;
+        border: 2px solid black;
+        border-radius: 4px;
+        width: 300px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .box4{
+        background-color: darkmagenta;
+        border: 2px solid black;
+        border-radius: 4px;
+        width: 300px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .box5{
+        background-color: #FF5C77;
+        columns: white;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        width: 400px;
+        margin-top: 25px;
+        border-radius: 20px;
+    }
+    .boxx{
+        background-color: white; 
+        color: black; width: 20px;
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 30px;
+        height: 100px;
+        margin-left: 350px;
+
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    
+    }
+
+    
+</style>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Blog</li>
+        </ul>
+    </nav>
+    <div>  <span><h1 style="text-align: center;">Dashboard</h1></span></div>
+    <div style="display: flex; gap: 50px; margin-top: -56px;">
+      
+        <div style="margin-left: 882px;">
+          
+        <input type="search" placeholder="search here" style="height: 30px;
+    width: 154px;
+    padding: 20px;
+    border-radius: 20px;">
+      <span>
+             <i class="fa-solid fa-magnifying-glass"></i></span>
+       </div>
+        <i class="fa-solid fa-gift"></i>
+        <i class="fa-regular fa-bell"></i>
+        <i class="fa-regular fa-message"></i>
+        <input style="background-color: blue; border-radius: 6px; height: 50px; width: 120px;color: white;" type="button" value="Generate report">
+        <i class="fa-solid fa-signal"></i>
+    
+    </div>
+    <div class="box">
+    <div class="box1">
+        <i class="fa-solid fa-file-invoice"></i>
+        <h1 style="text-align: center;">2478</h1>
+        <h4 style="text-align: center;">Total invoices</h4>
+    </div>
+    <div class="box2">
+        <i class="fa-regular fa-circle-check"></i>
+        <h1  style="text-align: center;">983</h1>
+        <h4  style="text-align: center;">Paid invoices</h4>
+    </div>
+    <div class="box3">
+        <i class="fa-regular fa-circle-xmark"></i>
+        <h1  style="text-align: center;">1256</h1>
+        <h4  style="text-align: center;">Unpaid invoices</h4>
+    </div>
+    <div class="box4">
+        <i class="fa-solid fa-file-invoice"></i>
+        <h1  style="text-align: center;">652</h1>
+        <h4  style="text-align: center;">Total invoices sent</h4>
+    </div>
+    </div>
+    <div class="box5">
+        <i style="margin-top: 10px; margin-left: 20px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" class="fa-regular fa-circle"></i>
+        <h1 style="text-align: center;">$824,571.93</h1>
+        <p style="text-align: center;">Wallet Balance</p>
+        <p style="text-align: center;">+0,8% than last week</p>
+        <div class="boxx">
+            <i style="margin-top: 10px;" class="fa-solid fa-arrows-rotate"></i>
+            <p>e</p>
+            <p>g</p>
+            <p>n</p>
+            <p>a</p>
+            <p>h</p>
+            <p>c</p>
+            <i style="margin-top: 10px;" class="fa-solid fa-less-than"></i>
+        </div>
+
+    </div>
+</body>
+</html>
