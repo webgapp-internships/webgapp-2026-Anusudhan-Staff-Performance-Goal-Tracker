@@ -22,13 +22,36 @@
     }
     .box{
         display: grid;
-        grid-template-columns:repeat(3,1fr);
+        grid-template-columns: repeat(3,1fr);
         gap: 20px;
         border: 3px solid white;
         padding: 5px;
         border-radius: 4px;
 
     }
+     @media(max-width:1050px){
+      body
+           {font-family: Georgia, 'Times New Roman', Times, serif;
+           background-color: darkcyan;
+             color: brown;
+            }
+             h1{
+              background-color: cornflowerblue;
+             }
+             .head{
+                display: grid;
+             }
+             img{
+                width: 250px;
+                height: 250px;
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+             }
+             .box{
+                display: grid;
+             }
+
+     }
 </style>
 <body>
     <h1><u>Nature</u></h1>

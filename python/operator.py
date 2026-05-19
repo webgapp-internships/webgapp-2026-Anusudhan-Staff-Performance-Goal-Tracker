@@ -4,7 +4,7 @@
 
 # a2=int(input("Enter Your First Number"))
 # b2=int(input("Enter Your Second Number"))
-# print("Subtraction:",a2 - b2)
+# print("Subtraction:",a2
 
 
 # a3=int(input("Enter Your First Number"))

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .main{
+            display: flex;
+            gap: 30px;
+        }
+.new {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: myAnimation;
+  animation-duration: 10s;
+}
+
+@keyframes myAnimation {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+.trans {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: width 2s;
+}
+
+.trans:hover {
+  width: 300px;
+}
+#img1 {
+  clip-path: ellipse(50% 35%);
+}
+
+#img2 {
+  clip-path: ellipse(40% 25%);
+}
+
+#img3 {
+  clip-path: ellipse(40% 50%);
+}
+#img4{
+  filter: blur(2px);
+}
+
+#img5 {
+  filter: blur(6px);
+}
+
+
+    </style>
+<body>
+<h1>HTML5 Canvas</h1>
+
+<canvas id="myCanvas" width="300" height="150" style="border:1px solid grey"></canvas>
+
+<p>This tag is used to draw graphics, on the fly, via scripting (usually JavaScript).
+
+This tag is transparent, and is only a container for graphics, you must use a script to actually draw the graphics.</p>
+<hr>
+<h1>The map and area elements</h1>
+
+<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+<div class="main">
+<img src="./IMAGES/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="./IMAGES/laptop.jpg">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="./IMAGES/phone.jpg">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="./IMAGES/coffee.jpg">
+</map>
+<p>The <map> tag is used to define an image map. An image map is an image with clickable areas.
+
+The required name attribute of the <map> element is associated with the <img>'s usemap attribute and creates a relationship between the image and the map.</p>
+</div>
+<hr>
+
+<h1>The del element</h1>
+
+<h2>My favorite color is <del>blue</del> <ins>red</ins>!</h2>
+
+<p>The tag defines text that has been deleted from a document. Browsers will usually strike a line through deleted text.
+
+</p>
+<hr>
+
+<h1>The mark element</h1>
+
+<h2>Do not forget to buy <mark>milk</mark> today.</h2>
+<p>This tag defines text that should be marked or highlighted.</p>
+<hr>
+
+<h1>The summary element</h1>
+
+<details>
+  <summary>Epcot Center</summary>
+  <h2>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</h2>
+</details>
+
+
+<h4>This  tag defines a visible heading for the  element. The heading can be clicked to view/hide the details.
+
+Note: This  element should be the first child element of the element.</h4>
+<hr>
+<h1>CSS Animation</h1>
+
+<div class="new"></div>
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+
+<h1>The transition Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+<div class="trans"></div>
+
+<hr>
+
+<h1>The ellipse() Function</h1>
+
+<div style="display: flex;">
+
+<p>clip-path: ellipse(50% 35%):</p>
+<img id="img1" src="./IMAGES/cat.jpg" alt="Pineapple" width="300" height="300">
+
+<p>clip-path: ellipse(40% 25%):</p>
+<img id="img2" src="./IMAGES/cat.jpg" alt="Pineapple" width="300" height="300">
+
+<p>clip-path: ellipse(40% 50%):</p>
+<img id="img3" src="./IMAGES/cat.jpg" alt="Pineapple" width="300" height="300">
+
+<p>Original image:</p>
+<img src="./IMAGES/cat.jpg" alt="Pineapple" width="300" height="300">
+</div>
+<hr>
+
+
+<h1>The blur() Function</h1>
+<div style="display: flex;">
+<p>blur(2px):</p>
+<img id="img4" src="./IMAGES/nat5.jpg" alt="Pineapple" width="300" height="300">
+
+<p>blur(6px):</p>
+<img id="img5" src="./IMAGES/nat5.jpg" alt="Pineapple" width="300" height="300">
+
+<p>Original image:</p>
+<img src="./IMAGES/nat5.jpg" alt="Pineapple" width="300" height="300">
+</div>
+<hr>
+<h1>The ins element</h1>
+
+<p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+<p>This tag defines a text that has been inserted into a document. Browsers will usually underline inserted text.</p>
+<hr>
+
+
+
+</body>
+</html>
