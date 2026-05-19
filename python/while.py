@@ -1,4 +1,6 @@
 password = ""
-    while != password:
-        password = "Python"
-        print("Login Successfully")
+while  password != "python":
+        password = input("enter your password:")
+print("Login Successfully")
+
+
